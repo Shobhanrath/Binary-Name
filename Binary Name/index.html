@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>See your name in binary form</title>
+	<style> 
+	.h3{
+		font-family: TimesNewRoman;
+		color: Red;
+		padding-top: 70px;
+	}
+
+</style>
+	<script type="text/javascript">
+			function change(){
+  var input = document.querySelector("input").value;
+  var output = document.querySelector("#output");
+  output.innerHTML = "";
+  for (var i = 0; i < input.length; i++){
+    output.innerHTML += input[i].charCodeAt(0).toString(2) + " ";
+  }
+}
+		</script>
+	</head>
+	<body bgcolor="Blue">
+		<center>
+			<h2 class="h3">Enter you name here and let's see your binary name</h2>
+			
+				<input><br><br>
+				<button onclick="change()">Convert the name</button>
+				<p id="output"></p>
+		</center>
+	
+	</body>
+</html>
